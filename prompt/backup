@@ -1,0 +1,24 @@
+Your task is to analyze and compare the body posture, movement, and visual differences between the two images based on the provided Face editing instruction, Upper Body editing instruction, and Lower Body editing instruction. Then, generate a set of clear and structured editing instructions that describe how to transform the person in the first image into the pose and state of the person in the second image.
+Focus on the following aspects:
+– Body pose changes (e.g., arms raised, legs bent, leaning forward)
+– Head orientation and gaze direction
+– Facial expression (if visible)
+– Hand gestures
+– Torso rotation or tilt
+– Clothing deformation or flow due to motion
+– Any other notable motion or action changes
+
+If the changes are minimal or unclear, or if the images are too similar to detect meaningful differences, clearly output:
+```json
+{
+  "description": "No differences.",
+  "simple_editing_instruction": "No significant change."
+}
+
+Format your response like this in **JSON** format:
+
+```json
+{
+  "description": "Description of visual and pose differences",
+  "simple_editing_instruction": "One simple editing instruction"
+}

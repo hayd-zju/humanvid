@@ -1,0 +1,21 @@
+You are provided with two lower-body images of the same person. Your task is to analyze and compare differences in the lower body region, including leg positioning, stance, and any notable body movements between the two images. Then, generate a clear and concise editing instruction that describes how to transform the person in the first image to match the second image.
+
+Focus on the following aspects:
+- Leg position (e.g., bent, straight, crossed)
+- Stance width (e.g., wide stance, narrow stance)
+- Knee positioning (e.g., bent, extended)
+- Feet positioning (e.g., pointing forward, outward, inward)
+- Any notable motion (e.g., moving or shifting weight)
+
+
+You are given:
+– Lower Body A (source image)
+– Lower Body B (target image)
+
+Format your response strictly in JSON like this:
+
+```json
+{
+  "description": "Description of visual and pose differences in the lower body",
+  "simple_editing_instruction": "One simple editing instruction"
+}
